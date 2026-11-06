@@ -1,0 +1,72 @@
+{
+  "environment": {
+    "sys_version": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "sys_executable": "D:\\word2vecUKR\\.venv\\Scripts\\python.exe",
+    "numpy_version": "2.5.4",
+    "scipy_version": "1.18.1",
+    "gensim_version": "4.4.0"
+  },
+  "active_venv": true,
+  "model": {
+    "path": "D:\\word2vecUKR\\fiction.lowercased.tokenized.word2vec.300d",
+    "word_count": 110363,
+    "vector_size": 300,
+    "mean_norm": 2.7982547283172607,
+    "min_norm": 0.01576574333012104,
+    "max_norm": 23.637861251831055
+  },
+  "categories": {
+    "physics": {
+      "present": [
+        "сила",
+        "енергія",
+        "швидкість",
+        "рух"
+      ],
+      "missing": [
+        "прискорення"
+      ]
+    },
+    "technology": {
+      "present": [
+        "робот",
+        "програма",
+        "мережа"
+      ],
+      "missing": [
+        "комп'ютер",
+        "процесор"
+      ]
+    },
+    "education": {
+      "present": [
+        "учень",
+        "учитель",
+        "школа",
+        "знання",
+        "навчання"
+      ],
+      "missing": []
+    },
+    "nature": {
+      "present": [
+        "вода",
+        "повітря",
+        "сонце",
+        "земля",
+        "рослина"
+      ],
+      "missing": []
+    }
+  },
+  "created_files": [
+    "D:\\word2vecUKR\\research_results\\physics_similarity.csv",
+    "D:\\word2vecUKR\\research_results\\physics_heatmap.png",
+    "D:\\word2vecUKR\\research_results\\technology_similarity.csv",
+    "D:\\word2vecUKR\\research_results\\technology_heatmap.png",
+    "D:\\word2vecUKR\\research_results\\education_similarity.csv",
+    "D:\\word2vecUKR\\research_results\\education_heatmap.png",
+    "D:\\word2vecUKR\\research_results\\nature_similarity.csv",
+    "D:\\word2vecUKR\\research_results\\nature_heatmap.png"
+  ]
+}

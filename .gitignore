@@ -1,0 +1,15 @@
+.venv/
+.venv-1/
+.vs/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Large Word2Vec model artifacts should not be committed.
+fiction.lowercased.tokenized.word2vec.300d
+fiction.lowercased.tokenized.word2vec.300d.bz2
+fiction.lowercased.tokenized.300d.bz2
+
+# Saved page assets are not part of the research source.
+tonal-model_word2vec usage examples.ipynb at master · lang-uk_tonal-model · GitHub.html
+tonal-model_word2vec usage examples.ipynb at master · lang-uk_tonal-model · GitHub_files/
