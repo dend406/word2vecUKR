@@ -1,0 +1,138 @@
+{
+  "base_seed": 20261106,
+  "seeds": [
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110
+  ],
+  "dimensions": [
+    50,
+    20,
+    10,
+    5
+  ],
+  "sample_size": 500,
+  "word_split_fraction": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "train_word_count": 350,
+  "validation_word_count": 75,
+  "heldout_word_count": 75,
+  "word_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "train_heldout_pair_overlap": 0,
+  "epochs": 150,
+  "patience": 15,
+  "learning_rate": 0.01,
+  "batch_size": 16384,
+  "regularization_values": [
+    0.0,
+    1e-05,
+    0.0001,
+    0.001
+  ],
+  "regularization_results": [
+    {
+      "dimensions": 50,
+      "l2_weight": 0.0,
+      "validation_mse": 0.0012804194120690227,
+      "mae": 0.030502747329574233,
+      "spearman": 0.9868649027136754,
+      "top10_overlap": 0.8679999999999999
+    },
+    {
+      "dimensions": 50,
+      "l2_weight": 1e-05,
+      "validation_mse": 0.0012804156867787242,
+      "mae": 0.030502666626161717,
+      "spearman": 0.9868657141607281,
+      "top10_overlap": 0.8679999999999999
+    },
+    {
+      "dimensions": 50,
+      "l2_weight": 0.0001,
+      "validation_mse": 0.0012803813442587852,
+      "mae": 0.030501904856885635,
+      "spearman": 0.9868666199490299,
+      "top10_overlap": 0.8679999999999999
+    },
+    {
+      "dimensions": 50,
+      "l2_weight": 0.001,
+      "validation_mse": 0.0012800531694665551,
+      "mae": 0.030494464096389187,
+      "spearman": 0.9868818571838586,
+      "top10_overlap": 0.8666666666666667
+    }
+  ],
+  "seed_stability": [
+    {
+      "dimensions": 50,
+      "mae_best": 0.030415732179500197,
+      "mae_mean": 0.030607159536448374,
+      "mae_worst": 0.030736380550434365,
+      "mae_std": 0.00014483238538113525,
+      "spearman_best": 0.9868817881125869,
+      "spearman_mean": 0.9864421778834573,
+      "spearman_worst": 0.9856974494113302,
+      "spearman_std": 0.00044468978956907214,
+      "top10_best": 0.8706666666666666,
+      "top10_mean": 0.8688,
+      "top10_worst": 0.8666666666666667,
+      "top10_std": 0.001520233900132177
+    },
+    {
+      "dimensions": 20,
+      "mae_best": 0.06769711330621472,
+      "mae_mean": 0.06795911164791743,
+      "mae_worst": 0.06810224799782326,
+      "mae_std": 0.00015931436190630156,
+      "spearman_best": 0.9485603199695772,
+      "spearman_mean": 0.9478566978889406,
+      "spearman_worst": 0.9469250115666302,
+      "spearman_std": 0.0006356307309889154,
+      "top10_best": 0.7559999999999999,
+      "top10_mean": 0.7506666666666666,
+      "top10_worst": 0.7466666666666667,
+      "top10_std": 0.00365148371670106
+    },
+    {
+      "dimensions": 10,
+      "mae_best": 0.12718172573937203,
+      "mae_mean": 0.12747277563798373,
+      "mae_worst": 0.12769288123719508,
+      "mae_std": 0.0002446481576369967,
+      "spearman_best": 0.8781324335499271,
+      "spearman_mean": 0.8768824205358886,
+      "spearman_worst": 0.875431492445428,
+      "spearman_std": 0.0011650284806897894,
+      "top10_best": 0.6426666666666667,
+      "top10_mean": 0.6405333333333334,
+      "top10_worst": 0.6373333333333334,
+      "top10_std": 0.0020221001184137365
+    },
+    {
+      "dimensions": 5,
+      "mae_best": 0.22607263389541896,
+      "mae_mean": 0.22632244044511354,
+      "mae_worst": 0.22647411324614483,
+      "mae_std": 0.00015263996627613703,
+      "spearman_best": 0.7756147284210257,
+      "spearman_mean": 0.7749200122666087,
+      "spearman_worst": 0.7743198818622941,
+      "spearman_std": 0.00048211591193514966,
+      "top10_best": 0.524,
+      "top10_mean": 0.5173333333333334,
+      "top10_worst": 0.512,
+      "top10_std": 0.004714045207910331
+    }
+  ],
+  "evaluation": "Cosine MAE, Spearman on all heldout-word pairs; Top-10 overlap on induced heldout-word matrices."
+}
