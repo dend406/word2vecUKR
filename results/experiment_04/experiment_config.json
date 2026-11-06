@@ -1,0 +1,45 @@
+{
+  "seed": 20261106,
+  "dimensions": [
+    50,
+    20,
+    10,
+    5
+  ],
+  "sample_size": 500,
+  "train_pair_fraction": 0.7,
+  "validation_pair_fraction": 0.15,
+  "test_pair_fraction": 0.15,
+  "train_pair_count": 87325,
+  "validation_pair_count": 18712,
+  "test_pair_count": 18713,
+  "epochs": 300,
+  "learning_rate": 0.01,
+  "l2_weight": 0.0001,
+  "batch_size": 16384,
+  "patience": 25,
+  "loss": "mean((cos_original - cos_projected)^2)",
+  "pair_split": "deterministic shuffle of all unique word pairs",
+  "optimization_info": {
+    "50": {
+      "optimization_seconds": 4.743715999999949,
+      "epochs": 116,
+      "validation_mse": 0.0007098600035533309
+    },
+    "20": {
+      "optimization_seconds": 1.0443887000001268,
+      "epochs": 50,
+      "validation_mse": 0.006051789037883282
+    },
+    "10": {
+      "optimization_seconds": 1.0279335999994146,
+      "epochs": 53,
+      "validation_mse": 0.022174647077918053
+    },
+    "5": {
+      "optimization_seconds": 0.9820442000000185,
+      "epochs": 49,
+      "validation_mse": 0.06826978921890259
+    }
+  }
+}
